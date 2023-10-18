@@ -287,8 +287,100 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Footer-sx */
+.footer-sx {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.footer-sx .brano {
+  display: flex;
+}
+
+/* immagine brano */
+.brano .cont-foto-brano {
+  width: 50px;
+  height: 50px;
+}
+
+.brano img {
+  width: 100%;
+}
+
+/* artista footer-sx */
+.footer-sx .brano .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px 0 10px;
+}
+
+.footer-sx .brano .info span {
+  color: var(--bg-grigio-nav);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Icone footer-sx */
+.footer-sx .icone i:first-child {
+  padding-right: 10px;
+}
+
+.footer-sx .icone i {
+  color: var(--bg-grigio-nav);
+}
+
+/* Footer-centro */
+.footer-centro {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-centro .comandi i {
+  font-size: 20px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.footer-centro .timeline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-centro .timeline span {
+  font-size: 10px;
+}
+
+.footer-centro .timeline .linea {
+  border: 1px solid var(--bg-grigio-nav);
+  width: 500px;
+  height: 3px;
+  background-color: var(--bg-grigio-nav);
+  border-radius: 10px;
+}
+
+.footer-centro .timeline .linea .andamento {
+  border: 1px solid white;
+  background-color: white;
+  width: 20%;
+  border-radius: 10px;
+}
+
+/* Footer-dx */
+
+.footer-dx {
+  border: 1px solid black;
+}
 /* 
 ---------------------
 HOVERS
