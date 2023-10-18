@@ -41,7 +41,7 @@ MAIN
 
 /* SideBar */
 .sidebar {
-  width: 200px;
+  width: 230px;
   background-color: black;
   position: fixed;
   height: 100%;
@@ -53,12 +53,12 @@ MAIN
 }
 
 .sidebar #logo-big {
-  padding: 30px 20px 0;
+  padding: 30px 80px 0 20px;
   display: block;
 }
 
 .sidebar .menu ul {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .sidebar .menu ul li {
@@ -68,7 +68,7 @@ MAIN
 }
 
 .sidebar .menu ul li img {
-  width: 15%;
+  width: 10%;
   height: auto;
   display: block;
 }
@@ -133,7 +133,13 @@ MAIN
 .footer-sidebar .installa {
   color: var(--bg-grigio);
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--bg-grigio);
+  /* border-bottom: 1px solid var(--bg-grigio); */
+}
+
+hr {
+  width: 190px;
+  margin-top: 3px;
+  border-color: var(--bg-grigio-nav);
 }
 
 /* Profilo */
@@ -164,7 +170,7 @@ MAIN
 
 /* Content */
 .content {
-  margin-left: 200px;
+  margin-left: 230px;
   height: calc(100vh - 100px);
   overflow-y: scroll;
 }
@@ -185,13 +191,14 @@ MAIN
   background-color: transparent;
   padding: 10px 30px;
   border-radius: 30px;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 .upgrade button a {
   color: white;
   text-decoration: none;
   word-spacing: 2px;
+  font-weight: 700;
 }
 
 /* Navbar */
@@ -296,6 +303,7 @@ footer {
 .footer-sx {
   display: flex;
   align-items: center;
+  margin-left: 10px;
   color: white;
 }
 
@@ -329,7 +337,7 @@ footer {
 
 /* Icone footer-sx */
 .footer-sx .icone i:first-child {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .footer-sx .icone i {
@@ -379,7 +387,28 @@ footer {
 /* Footer-dx */
 
 .footer-dx {
-  border: 1px solid black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer-dx > * {
+  padding: 0 15px;
+}
+
+.footer-dx .timeline .linea {
+  border: 1px solid var(--bg-grigio-nav);
+  width: 100px;
+  height: 3px;
+  background-color: var(--bg-grigio-nav);
+  border-radius: 10px;
+}
+
+.footer-dx .timeline .linea .andamento {
+  border: 1px solid white;
+  background-color: white;
+  width: 30%;
+  border-radius: 10px;
 }
 /* 
 ---------------------
