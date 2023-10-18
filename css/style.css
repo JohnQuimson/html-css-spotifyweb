@@ -353,16 +353,25 @@ footer {
   align-items: center;
 }
 
+.footer-centro .comandi {
+  margin-bottom: 10px;
+}
+
 .footer-centro .comandi i {
   font-size: 20px;
   padding: 0 20px;
   margin-bottom: 10px;
 }
 
+.footer-centro .comandi i:nth-child(3) {
+  font-size: 30px;
+}
+
 .footer-centro .timeline {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-centro .timeline span {
