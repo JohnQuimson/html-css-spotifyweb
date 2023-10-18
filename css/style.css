@@ -67,6 +67,24 @@ MAIN
   text-decoration: none;
 }
 
+nav {
+  padding-top: 120px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+
+nav ul li {
+  color: white;
+  font-size: 12px;
+}
+
 /* 
 ---------------------
 FOOTER
