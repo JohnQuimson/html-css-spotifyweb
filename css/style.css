@@ -14,9 +14,21 @@ RESET
 COMMON
 ---------------------
 */
+:root {
+  --bg-grigio: #6e6e6e;
+}
+
 body {
   background-color: #141922;
   font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* 
@@ -34,10 +46,66 @@ MAIN
   overflow: auto;
 }
 
-.sidebar a {
-  display: block;
-  color: white;
-  text-decoration: none;
+.sidebar #logo {
+  padding: 30px 20px 0;
+}
+
+.sidebar .menu ul {
+  margin-top: 30px;
+}
+
+.sidebar .menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 0 15px 20px;
+}
+
+.sidebar .menu ul li img {
+  width: 15%;
+  height: auto;
+}
+
+.sidebar .menu ul li span {
+  padding: 0 10px;
+  font-size: 14px;
+  color: var(--bg-grigio);
+}
+
+/* playlist */
+.playlist {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.playlist h4 {
+  margin-top: 10px;
+}
+
+.crea-playlist {
+  margin-top: 10px;
+}
+
+.crea-playlist i {
+  font-size: 40px;
+  vertical-align: middle;
+  color: var(--bg-grigio);
+}
+
+.crea-playlist span {
+  vertical-align: middle;
+  margin-left: 10px;
+  color: var(--bg-grigio);
+}
+
+.playlist ul {
+  margin-top: 15px;
+}
+
+.playlist ul li {
+  text-align: left;
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--bg-grigio);
 }
 
 /* Content */
@@ -97,7 +165,7 @@ HOVERS
 ---------------------
 */
 
-.sidebar a:hover {
+.sidebar .menu ul li:hover {
   border-left: 3px solid #adff2f;
 }
 
