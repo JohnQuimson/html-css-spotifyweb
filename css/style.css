@@ -109,7 +109,7 @@ MAIN
 .playlist ul {
   margin-top: 15px;
   max-height: 300px;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .playlist ul li {
@@ -181,6 +181,7 @@ MAIN
   background-color: transparent;
   padding: 10px 30px;
   border-radius: 30px;
+  margin-right: 10px;
 }
 
 .upgrade button a {
@@ -209,6 +210,86 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+/* Recenti */
+.recenti {
+  margin: 30px auto 0;
+  width: 98%;
+}
+
+.recenti h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cont-recenti {
+  width: 100%;
+  display: flex;
+}
+
+.box {
+  width: calc(100% / 6);
+  padding: 0 0.5vw;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.box h4 {
+  color: white;
+  margin-bottom: 1vh;
+}
+
+.box h5 {
+  color: var(--bg-grigio-nav);
+  font-size: 12px;
+}
+
+/* Creato per */
+.personalized {
+  margin: 30px auto 0;
+  width: 98%;
+}
+
+.personalized h2 {
+  color: white;
+  margin: 50px 0 10px;
+}
+
+.personalized h5 {
+  color: var(--bg-grigio-nav);
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.cont-personal {
+  width: 100%;
+  display: flex;
+}
+
+.box {
+  width: calc(100% / 6);
+  padding: 0 0.5vw;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.box h4 {
+  color: white;
+  margin-bottom: 1vh;
+}
+
+.box h5 {
+  color: var(--bg-grigio-nav);
+  font-size: 12px;
+}
+
 /* 
 ---------------------
 FOOTER
@@ -229,6 +310,11 @@ nav ul li:hover {
   padding-bottom: 5px;
   border-bottom: 3px solid #adff2f;
   cursor: pointer;
+}
+
+.playlist ul:hover {
+  overflow-y: scroll;
+  cursor: default;
 }
 
 /* 
