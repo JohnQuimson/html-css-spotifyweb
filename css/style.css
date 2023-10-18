@@ -196,7 +196,6 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-
   list-style-type: none;
 }
 
@@ -204,6 +203,7 @@ nav ul li {
   color: var(--bg-grigio-nav);
   font-size: 12px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 /* 
@@ -235,6 +235,25 @@ RESPONSIVE
 */
 /* Medium da 0 a 768*/
 @media screen and (max-width: 768px) {
+}
+/* Navbar */
+nav {
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  color: var(--bg-grigio-nav);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
 }
 
 /* Small da 0 a 576*/
@@ -304,5 +323,10 @@ RESPONSIVE
 
   .content {
     margin-left: 50px;
+  }
+
+  /* Upgrade */
+  .upgrade {
+    left: 50px;
   }
 }
