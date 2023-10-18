@@ -48,6 +48,7 @@ MAIN
 
 .sidebar #logo {
   padding: 30px 20px 0;
+  display: block;
 }
 
 .sidebar .menu ul {
@@ -63,11 +64,13 @@ MAIN
 .sidebar .menu ul li img {
   width: 15%;
   height: auto;
+  display: block;
 }
 
 .sidebar .menu ul li span {
   padding: 0 10px;
   font-size: 14px;
+  font-weight: 700;
   color: var(--bg-grigio);
 }
 
@@ -94,6 +97,7 @@ MAIN
 .crea-playlist span {
   vertical-align: middle;
   margin-left: 10px;
+  font-weight: 700;
   color: var(--bg-grigio);
 }
 
@@ -105,7 +109,46 @@ MAIN
   text-align: left;
   padding: 10px 0;
   font-size: 14px;
+  font-weight: 600;
   color: var(--bg-grigio);
+}
+
+/* Footer SideBar */
+.footer-sidebar {
+  border: 1px solid purple;
+  padding-left: 20px;
+}
+/* Installa */
+.footer-sidebar .installa {
+  color: var(--bg-grigio);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--bg-grigio);
+}
+
+/* Profilo */
+.footer-sidebar .profilo {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footer-sidebar .foto-profilo {
+  background-color: #6e6e6e;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.footer-sidebar img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-sidebar span {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /* Content */
