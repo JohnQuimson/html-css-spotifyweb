@@ -115,8 +115,9 @@ MAIN
 
 /* Footer SideBar */
 .footer-sidebar {
-  border: 1px solid purple;
-  padding-left: 20px;
+  padding: 0 0 10px 20px;
+  position: absolute;
+  bottom: 0px;
 }
 /* Installa */
 .footer-sidebar .installa {
