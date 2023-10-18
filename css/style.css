@@ -17,6 +17,7 @@ COMMON
 :root {
   --bg-grigio: #6e6e6e;
   --bg-grigio-nav: #7d7f84;
+  --bg-footer: #282828;
 }
 
 body {
@@ -123,8 +124,8 @@ MAIN
 /* Footer SideBar */
 .footer-sidebar {
   padding: 20px 0 10px 20px;
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  bottom: 100px;
   background-color: black;
 }
 
@@ -164,6 +165,8 @@ MAIN
 /* Content */
 .content {
   margin-left: 200px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
 }
 
 /* Nav Upgrade */
@@ -174,6 +177,7 @@ MAIN
   position: fixed;
   right: 0;
   left: 200px;
+  height: 100px;
 }
 
 .upgrade button {
@@ -276,6 +280,14 @@ nav ul li {
 FOOTER
 ---------------------
 */
+footer {
+  height: 100px;
+  background-color: var(--bg-footer);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 
 /* 
 ---------------------
@@ -303,8 +315,8 @@ nav ul li:hover {
 RESPONSIVE
 ---------------------
 */
-/* Medium da 0 a 768*/
-@media screen and (max-width: 768px) {
+/* Medium da 0 a 992*/
+@media screen and (max-width: 992px) {
   /* Navbar */
   nav {
     width: 85%;
@@ -347,11 +359,19 @@ RESPONSIVE
   }
 }
 
-/* Small da 0 a 576*/
-@media screen and (max-width: 576px) {
+/* Small da 0 a 768*/
+@media screen and (max-width: 768px) {
+  .recenti {
+    width: 90%;
+  }
+
+  .box {
+    width: calc(100% / 2);
+    padding: 0 1vw;
+  }
 }
 
-/* Extra Small */
+/* Extra Small da 0 a 576*/
 @media screen and (max-width: 576px) {
   /* sidebar */
   .sidebar {
@@ -419,5 +439,10 @@ RESPONSIVE
   /* Upgrade */
   .upgrade {
     left: 50px;
+  }
+
+  /* Content */
+  .recenti h2 {
+    margin-top: 100px;
   }
 }
