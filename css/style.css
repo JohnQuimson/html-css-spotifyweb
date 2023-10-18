@@ -16,6 +16,7 @@ COMMON
 */
 :root {
   --bg-grigio: #6e6e6e;
+  --bg-grigio-nav: #7d7f84;
 }
 
 body {
@@ -123,6 +124,7 @@ MAIN
   position: absolute;
   bottom: 0px;
 }
+
 /* Installa */
 .footer-sidebar .installa {
   color: var(--bg-grigio);
@@ -181,8 +183,10 @@ MAIN
 .upgrade button a {
   color: white;
   text-decoration: none;
+  word-spacing: 2px;
 }
 
+/* Navbar */
 nav {
   padding-top: 120px;
   width: 60%;
@@ -197,8 +201,9 @@ nav ul {
 }
 
 nav ul li {
-  color: white;
+  color: var(--bg-grigio-nav);
   font-size: 12px;
+  font-weight: 700;
 }
 
 /* 
@@ -215,6 +220,12 @@ HOVERS
 
 .sidebar .menu ul li:hover {
   border-left: 3px solid #adff2f;
+}
+
+nav ul li:hover {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #adff2f;
+  cursor: pointer;
 }
 
 /* 
