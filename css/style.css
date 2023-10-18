@@ -108,6 +108,8 @@ MAIN
 
 .playlist ul {
   margin-top: 15px;
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
 .playlist ul li {
@@ -120,9 +122,10 @@ MAIN
 
 /* Footer SideBar */
 .footer-sidebar {
-  padding: 0 0 10px 20px;
-  position: absolute;
+  padding: 20px 0 10px 20px;
+  position: fixed;
   bottom: 0px;
+  background-color: black;
 }
 
 /* Installa */
@@ -189,7 +192,7 @@ MAIN
 /* Navbar */
 nav {
   padding-top: 120px;
-  width: 60%;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -235,25 +238,19 @@ RESPONSIVE
 */
 /* Medium da 0 a 768*/
 @media screen and (max-width: 768px) {
-}
-/* Navbar */
-nav {
-  width: 85%;
-  margin: 0 auto;
-}
+  /* Navbar */
+  nav {
+    width: 85%;
+  }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
+  nav ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  color: var(--bg-grigio-nav);
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 10px;
+  nav ul li {
+    padding: 5px 10px;
+  }
 }
 
 /* Small da 0 a 576*/
