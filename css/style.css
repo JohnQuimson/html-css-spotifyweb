@@ -224,9 +224,13 @@ nav ul li {
   margin-bottom: 10px;
 }
 
-nav ul li:first-child {
-  padding-bottom: 5px;
-  border-bottom: 3px solid #adff2f;
+.selected::after {
+  content: '';
+  width: 40%;
+  height: 2px;
+  display: block;
+  background-color: #adff2f;
+  margin: 5px auto 0;
 }
 
 /* Recenti */
