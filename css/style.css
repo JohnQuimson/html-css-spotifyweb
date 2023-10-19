@@ -773,6 +773,10 @@ RESPONSIVE
     display: none;
   }
 
+  .footer-sidebar hr {
+    display: none;
+  }
+
   /* Profilo */
   .footer-sidebar .profilo span {
     display: none;
