@@ -282,6 +282,27 @@ nav ul li {
   display: flex;
 }
 
+/* Artisti */
+.artisti {
+  margin: 30px auto 0;
+  width: 98%;
+}
+
+.artisti h2 {
+  color: white;
+  margin: 50px 0 10px;
+}
+
+.artisti h5 {
+  color: var(--bg-grigio-nav);
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.artisti .box img {
+  border-radius: 50%;
+}
+
 /* 
 ---------------------
 FOOTER
@@ -377,24 +398,19 @@ footer {
   gap: 10px;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 100%;
+  width: 80%;
+  border: 1px solid purple;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-centro .timeline span {
   font-size: 10px;
 }
 
-.footer-centro .timeline span:first-child {
-  margin-left: 80px;
-}
-
-.footer-centro .timeline span:last-child {
-  margin-right: 80px;
-}
-
 .footer-centro .timeline .linea {
   border: 1px solid var(--bg-grigio-nav);
-  width: 80%;
+  width: 90%;
   height: 3px;
   background-color: var(--bg-grigio-nav);
   border-radius: 10px;
