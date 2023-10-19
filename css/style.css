@@ -23,6 +23,8 @@ COMMON
 body {
   background-color: #141922;
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 .sidebar {
@@ -45,7 +47,6 @@ MAIN
   background-color: black;
   position: fixed;
   height: 100%;
-  overflow: auto;
 }
 
 .sidebar #logo-small {
@@ -133,7 +134,6 @@ MAIN
 .footer-sidebar .installa {
   color: var(--bg-grigio);
   padding-bottom: 10px;
-  /* border-bottom: 1px solid var(--bg-grigio); */
 }
 
 hr {
@@ -173,6 +173,7 @@ hr {
   margin-left: 230px;
   height: calc(100vh - 100px);
   overflow-y: scroll;
+  padding-bottom: 100px;
 }
 
 /* Nav Upgrade */
@@ -222,6 +223,11 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+nav ul li:first-child {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #adff2f;
+}
+
 /* Recenti */
 .recenti {
   margin: 30px auto 0;
@@ -244,9 +250,24 @@ nav ul li {
   text-align: center;
 }
 
+.cont-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box .cont-i i {
+  position: absolute;
+  color: white;
+  font-size: 72px;
+  display: none;
+}
+
 .box img {
   width: 100%;
   margin-bottom: 1vh;
+  display: block;
 }
 
 .box h4 {
@@ -319,6 +340,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  flex-shrink: 1;
 }
 
 /* Footer-sx */
@@ -360,7 +382,7 @@ footer {
 
 /* Icone footer-sx */
 .footer-sx .icone {
-  margin: 0 auto;
+  margin-left: 1.5vw;
   display: flex;
   width: 20%;
   justify-content: space-between;
@@ -401,7 +423,6 @@ footer {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 80%;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -416,6 +437,10 @@ footer {
   background-color: var(--bg-grigio-nav);
   border-radius: 10px;
   margin: 0 auto;
+  display: flex;
+  height: 5px;
+  align-items: center;
+  border: none;
 }
 
 .footer-centro .timeline .linea .andamento {
@@ -423,6 +448,16 @@ footer {
   background-color: white;
   width: 20%;
   border-radius: 10px;
+  height: 100%;
+}
+
+.footer-centro .cerchio-andamento-centro {
+  height: 15px;
+  width: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
 }
 
 /* Footer-dx */
@@ -437,12 +472,18 @@ footer {
   padding: 0 15px;
 }
 
+.footer-dx .timeline {
+  width: 100%;
+}
+
 .footer-dx .timeline .linea {
-  border: 1px solid var(--bg-grigio-nav);
-  width: 100px;
+  border: none;
+  width: 100%;
   height: 3px;
   background-color: var(--bg-grigio-nav);
   border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-dx .timeline .linea .andamento {
@@ -450,7 +491,19 @@ footer {
   background-color: white;
   width: 30%;
   border-radius: 10px;
+  height: 100%;
 }
+
+.footer-dx .cerchio-andamento-dx {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+/* prove */
+
 /* 
 ---------------------
 HOVERS
@@ -461,14 +514,74 @@ HOVERS
   border-left: 3px solid #adff2f;
 }
 
+.upgrade button:hover {
+  padding: 15px 35px;
+}
+
 nav ul li:hover {
-  padding-bottom: 5px;
-  border-bottom: 3px solid #adff2f;
+  color: white;
   cursor: pointer;
 }
 
 .playlist ul:hover {
   overflow-y: scroll;
+  cursor: pointer;
+}
+
+.sidebar .menu ul span:hover,
+.footer-sidebar .installa:hover,
+.playlist ul li:hover,
+.footer-sx .icone i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.playlist .crea-playlist:hover i,
+.playlist .crea-playlist:hover span,
+.playlist .crea-playlist:hover {
+  color: #adff2f;
+  cursor: pointer;
+}
+
+/* content */
+.cont-i:hover {
+  filter: brightness(50%);
+}
+
+.cont-i:hover i {
+  display: block;
+  cursor: pointer;
+}
+
+/* footer */
+.footer-sx .brano .info span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer-centro .comandi i:hover,
+.footer-dx i:hover {
+  cursor: pointer;
+}
+
+.footer-centro .comandi i:nth-child(3):hover {
+  font-size: 40px;
+}
+
+.footer-centro .linea:hover .andamento,
+.footer-dx .linea:hover .andamento {
+  border-color: #adff2f;
+  background-color: #adff2f;
+  cursor: pointer;
+}
+
+.footer-centro .linea:hover .cerchio-andamento-centro {
+  display: block;
+  cursor: pointer;
+}
+
+.footer-dx .linea:hover .cerchio-andamento-dx {
+  display: block;
   cursor: pointer;
 }
 /* 
@@ -479,7 +592,7 @@ CUSTOM SCROLL-BAR
 
 /* Larghezza */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Percorso (in questo caso nascosto) */
@@ -487,9 +600,10 @@ CUSTOM SCROLL-BAR
   background: none;
 }
 
-/* Colore */
+/* stile scroll-bar */
 ::-webkit-scrollbar-thumb {
   background-color: rgba(110, 110, 110, 0.8);
+  border-radius: 20px;
 }
 
 /* Hover */
@@ -713,5 +827,12 @@ RESPONSIVE
 
   .footer-dx .timeline .linea {
     width: 50px;
+  }
+}
+
+@media screen and (min-height: 400px) {
+  html {
+    min-height: 400px;
+    overflow: auto;
   }
 }
