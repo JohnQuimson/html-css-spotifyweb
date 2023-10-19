@@ -469,7 +469,32 @@ nav ul li:hover {
 
 .playlist ul:hover {
   overflow-y: scroll;
-  cursor: default;
+  cursor: pointer;
+}
+/* 
+---------------------
+CUSTOM SCROLL-BAR
+---------------------
+*/
+
+/* Larghezza */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Percorso (in questo caso nascosto) */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Colore */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(110, 110, 110, 0.8);
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
 
 /* 
