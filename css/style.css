@@ -269,7 +269,7 @@ nav ul li {
   display: flex;
   position: absolute;
   inset: 0;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
 }
 
 .box .cont-i i {
