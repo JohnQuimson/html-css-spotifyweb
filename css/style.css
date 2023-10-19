@@ -186,6 +186,7 @@ hr {
   right: 0;
   left: 230px;
   height: 100px;
+  z-index: 99;
 }
 
 .upgrade button {
