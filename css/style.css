@@ -318,6 +318,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 /* Footer-sx */
@@ -327,7 +328,6 @@ footer {
   margin-left: 10px;
   color: white;
   width: 20%;
-  border: 1px solid greenyellow;
 }
 
 .footer-sx .brano {
@@ -349,7 +349,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 50px 0 10px;
+  padding: 0 30px 0 10px;
 }
 
 .footer-sx .brano .info span {
@@ -359,8 +359,11 @@ footer {
 }
 
 /* Icone footer-sx */
-.footer-sx .icone i:first-child {
-  padding-right: 20px;
+.footer-sx .icone {
+  margin: 0 auto;
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
 }
 
 .footer-sx .icone i {
@@ -375,7 +378,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  border: 1px solid green;
 }
 
 .footer-centro .comandi {
@@ -399,7 +401,6 @@ footer {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 80%;
-  border: 1px solid purple;
   display: flex;
   justify-content: space-between;
 }
@@ -430,7 +431,6 @@ footer {
   display: flex;
   align-items: center;
   width: 20%;
-  border: 1px solid greenyellow;
 }
 
 .footer-dx > * {
@@ -548,13 +548,33 @@ RESPONSIVE
   /* footer */
 
   /* foot-sx */
-  .footer-sx .brano .info {
-    padding: 0 20px 0 10px;
+  .footer-sx,
+  .footer-dx {
+    width: 30%;
   }
 
-  /* foot-sx */
+  .footer-sx .brano .info {
+    padding: 0 30px 0 10px;
+  }
+
+  .footer-sx .icone {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* foot-centro */
+  .footer-centro {
+    width: 50%;
+  }
+
   .footer-centro .comandi i {
-    padding: 0 2vw;
+    padding: 0 1.5vw;
+  }
+
+  /* footer-dx */
+
+  .footer-dx > * {
+    padding: 0 10px;
   }
 }
 
@@ -643,5 +663,55 @@ RESPONSIVE
   /* Content */
   .recenti h2 {
     margin-top: 100px;
+  }
+
+  /* Footer */
+
+  /* footer-sx */
+  .footer-sx h5 {
+    font-size: 12px;
+  }
+
+  .footer-sx .brano .cont-foto-brano {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-sx .brano .info {
+    padding: 0 10px 0 5px;
+  }
+
+  .footer-sx .icone {
+    gap: 5px;
+  }
+
+  .footer-sx .icone i {
+    font-size: 16px;
+  }
+
+  /* footer-centro */
+  .footer-centro .comandi i {
+    font-size: 14px;
+  }
+
+  .footer-centro .comandi i:nth-child(3) {
+    font-size: 20px;
+  }
+
+  .footer-centro .timeline {
+    width: 100%;
+  }
+
+  /* footer-dx */
+  .footer-dx i {
+    font-size: 12px;
+  }
+
+  .footer-dx > * {
+    padding: 0 0.6vw;
+  }
+
+  .footer-dx .timeline .linea {
+    width: 50px;
   }
 }
