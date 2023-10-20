@@ -35,6 +35,10 @@ ul {
   list-style-type: none;
 }
 
+.maiuscolo {
+  text-transform: uppercase;
+}
+
 /* 
 ---------------------
 MAIN
@@ -574,7 +578,8 @@ nav ul li:hover {
 }
 
 /* content */
-.cont-i:hover::after {
+.cont-i:hover::after,
+.cont-i-cerchio:hover::after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -582,11 +587,6 @@ nav ul li:hover {
 .cont-i-cerchio:hover i {
   display: block;
   cursor: pointer;
-}
-
-.cont-i-cerchio:hover::after {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
 }
 
 /* footer */
