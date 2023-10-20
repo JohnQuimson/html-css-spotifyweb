@@ -3,7 +3,6 @@
 RESET
 ---------------------
 */
-
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +21,7 @@ COMMON
 }
 
 body {
-  background-color: #141922;
+  background-color: rgb(20, 25, 34);
   font-family: 'Montserrat', sans-serif;
   height: 100%;
   width: 100%;
@@ -652,4 +651,262 @@ CUSTOM SCROLL-BAR
 RESPONSIVE
 ---------------------
 */
-@import '/css/_partials/responsive.css';
+/* Medium da 0 a 992*/
+@media screen and (max-width: 992px) {
+  /* Navbar */
+  nav {
+    width: 85%;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    padding: 5px 10px;
+  }
+
+  /* Recenti */
+  .recenti h2 {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+
+  .cont-recenti {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: calc(100% / 4);
+    margin-bottom: 20px;
+  }
+
+  .box h4 {
+    font-size: 12px;
+  }
+
+  .personalized h2 {
+    font-size: 20px;
+  }
+
+  .personalized h5 {
+    font-size: 10px;
+  }
+
+  /* footer */
+
+  /* foot-sx */
+  .footer-sx,
+  .footer-dx {
+    width: 30%;
+  }
+
+  .footer-sx .brano .info {
+    padding: 0 30px 0 10px;
+  }
+
+  .footer-sx .icone {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* foot-centro */
+  .footer-centro {
+    width: 50%;
+  }
+
+  .footer-centro .comandi i {
+    padding: 0 1.5vw;
+  }
+
+  /* footer-dx */
+
+  .footer-dx > * {
+    padding: 0 10px;
+  }
+}
+
+/* Small da 0 a 768*/
+@media screen and (max-width: 768px) {
+  .recenti {
+    width: 90%;
+  }
+
+  .box {
+    width: calc(100% / 2);
+    padding: 0 1vw;
+  }
+}
+
+/* Extra Small da 0 a 576*/
+@media screen and (max-width: 576px) {
+  /* sidebar */
+  .sidebar {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    height: 70px;
+    display: flex;
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.1)
+    );
+  }
+
+  .sidebar #logo-small {
+    display: none;
+  }
+
+  .sidebar #logo-big {
+    display: none;
+  }
+
+  .sidebar .menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 4vw 0 1vw;
+  }
+
+  .sidebar .menu ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sidebar .menu ul li img {
+    width: 15%;
+    height: auto;
+    display: block;
+  }
+
+  .sidebar .menu ul li span {
+    padding: 0;
+    font-size: 12px;
+    margin-top: 5px;
+    color: var(--bg-grigio);
+  }
+
+  .sidebar .menu ul li:hover {
+    border-left: none;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .footer-sidebar {
+    display: none;
+  }
+
+  /* Upgrade */
+  .upgrade {
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .upgrade button {
+    padding: 5px 20px;
+  }
+
+  .upgrade button a {
+    word-spacing: 1px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  /* navbar */
+  nav {
+    width: 90%;
+    padding-top: 80px;
+  }
+
+  /* Content */
+
+  .content {
+    margin: 0;
+  }
+
+  .recenti h2 {
+    margin-top: 50px;
+  }
+
+  /* Footer */
+
+  footer {
+    bottom: 70px;
+    height: 60px;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  /* footer-sx */
+  .footer-sx h5 {
+    font-size: 12px;
+  }
+
+  .footer-sx .brano .cont-foto-brano {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-sx .brano .cont-foto-brano img {
+    border-radius: 5px;
+  }
+
+  .footer-sx .brano .info {
+    gap: 5px;
+  }
+
+  .footer-sx .brano .info h5,
+  .footer-sx .brano .info span {
+    font-weight: 500;
+  }
+
+  .footer-sx .icone {
+    display: none;
+  }
+
+  .footer-sx .icone i {
+    font-size: 16px;
+  }
+
+  /* footer-centro */
+  .footer-centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  .footer-centro .comandi i {
+    display: none;
+  }
+
+  .footer-centro span {
+    display: none;
+  }
+
+  .footer-centro .comandi i:nth-child(3) {
+    display: block;
+    margin: 0;
+    margin: 10px 10px 0 0;
+    font-size: 28px;
+  }
+
+  .footer-centro .timeline {
+    display: none;
+  }
+
+  /* footer-dx */
+  .footer-dx {
+    display: none;
+  }
+}
