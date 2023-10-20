@@ -652,4 +652,4 @@ RESPONSIVE
 ---------------------
 */
 
-@import url(_partials/responsive.css);
+@import url('/css/_partials/responsive.css');
