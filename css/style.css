@@ -3,6 +3,7 @@
 RESET
 ---------------------
 */
+
 * {
   padding: 0;
   margin: 0;
@@ -651,5 +652,4 @@ CUSTOM SCROLL-BAR
 RESPONSIVE
 ---------------------
 */
-
-@import url('/css/_partials/responsive.css');
+@import '/css_partials/responsive.css';
