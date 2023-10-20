@@ -795,6 +795,11 @@ RESPONSIVE
     border-left: none;
   }
 
+  .sidebar .menu ul li:hover span {
+    color: white;
+    cursor: pointer;
+  }
+
   .playlist {
     display: none;
   }
