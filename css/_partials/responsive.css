@@ -1,0 +1,232 @@
+/* Medium da 0 a 992*/
+@media screen and (max-width: 992px) {
+  /* Navbar */
+  nav {
+    width: 85%;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    padding: 5px 10px;
+  }
+
+  /* Recenti */
+  .recenti h2 {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+
+  .cont-recenti {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: calc(100% / 4);
+    margin-bottom: 20px;
+  }
+
+  .box h4 {
+    font-size: 12px;
+  }
+
+  .personalized h2 {
+    font-size: 20px;
+  }
+
+  .personalized h5 {
+    font-size: 10px;
+  }
+
+  /* footer */
+
+  /* foot-sx */
+  .footer-sx,
+  .footer-dx {
+    width: 30%;
+  }
+
+  .footer-sx .brano .info {
+    padding: 0 30px 0 10px;
+  }
+
+  .footer-sx .icone {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* foot-centro */
+  .footer-centro {
+    width: 50%;
+  }
+
+  .footer-centro .comandi i {
+    padding: 0 1.5vw;
+  }
+
+  /* footer-dx */
+
+  .footer-dx > * {
+    padding: 0 10px;
+  }
+}
+
+/* Small da 0 a 768*/
+@media screen and (max-width: 768px) {
+  .recenti {
+    width: 90%;
+  }
+
+  .box {
+    width: calc(100% / 2);
+    padding: 0 1vw;
+  }
+}
+
+/* Extra Small da 0 a 576*/
+@media screen and (max-width: 576px) {
+  /* sidebar */
+  .sidebar {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    height: 100px;
+    display: flex;
+    bottom: 0;
+  }
+
+  .sidebar #logo-small {
+    display: none;
+  }
+
+  .sidebar #logo-big {
+    display: none;
+  }
+
+  .sidebar .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* Sistema padding qua */
+  .sidebar .menu ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 15px 20px;
+    border: 1px solid white;
+  }
+
+  .sidebar .menu ul li img {
+    width: 20%;
+    height: auto;
+    display: block;
+  }
+
+  .sidebar .menu ul li span {
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--bg-grigio);
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .footer-sidebar {
+    display: none;
+  }
+
+  /* Upgrade */
+  .upgrade {
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .upgrade button {
+    padding: 5px 20px;
+  }
+
+  .upgrade button a {
+    word-spacing: 1px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  /* navbar */
+  nav {
+    width: 90%;
+    padding-top: 80px;
+  }
+
+  /* Content */
+
+  .content {
+    margin: 0;
+  }
+
+  .recenti h2 {
+    margin-top: 50px;
+  }
+
+  /* Footer */
+
+  footer {
+    bottom: 100px;
+  }
+
+  /* footer-sx */
+  .footer-sx h5 {
+    font-size: 12px;
+  }
+
+  .footer-sx .brano .cont-foto-brano {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-sx .brano .info {
+    padding: 0 10px 0 5px;
+  }
+
+  .footer-sx .icone {
+    gap: 5px;
+  }
+
+  .footer-sx .icone i {
+    font-size: 16px;
+  }
+
+  /* footer-centro */
+  .footer-centro .comandi i {
+    font-size: 14px;
+  }
+
+  .footer-centro .comandi i:nth-child(3) {
+    font-size: 20px;
+  }
+
+  .footer-centro .timeline {
+    width: 100%;
+  }
+
+  /* footer-dx */
+  .footer-dx i {
+    font-size: 12px;
+  }
+
+  .footer-dx > * {
+    padding: 0 0.6vw;
+  }
+
+  .footer-dx .timeline .linea {
+    width: 50px;
+  }
+}
