@@ -755,14 +755,22 @@ RESPONSIVE
   }
 
   /* Playlist */
+  .sidebar .menu {
+    flex-grow: 1;
+  }
+
   .playlist {
     display: none;
   }
 
   /* Installa */
   .footer-sidebar {
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .footer-sidebar .installa {
@@ -784,6 +792,10 @@ RESPONSIVE
 
   .footer-sidebar .profilo {
     margin-left: -7px;
+  }
+
+  .footer-sidebar .profilo .foto-profilo {
+    margin-left: 5px;
   }
 
   .content {
